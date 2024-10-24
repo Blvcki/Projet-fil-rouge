@@ -1,0 +1,90 @@
+:root {
+    --Dark: #041821;
+    --primary: #1bd79e;
+    --p: #808080;
+    --gris: #e5e5e5;
+    --texte: #ffffff;
+}
+
+.lightMode {
+    background-color: var(--texte);
+    color: var(--Dark);
+}
+
+span {
+    color: var(--primary);
+}
+body {
+    background-color: var(--Dark);
+    color: var(--texte);
+}
+header {
+    border-bottom: 1px solid var(--p);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 0.5em;
+}
+
+header ul a {
+    margin: 5px;
+    margin-right: 0.5em;
+    color: var(--gris);
+}
+
+main {
+    width: 80%;
+    margin: auto;
+}
+
+main h1, main p{
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    width: 60%;
+}
+
+main h1 {
+    font-size: 3em;
+}
+
+main p {
+    color: var(--p);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+main ul {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 2em;
+}
+
+main ul button {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+    background-color: var(--Dark);
+    color: var(--texte);
+    border: none;
+    letter-spacing: 0.25em;
+
+}
+
+.buttonback {
+    background-color: var(--primary);
+}
+.grid {
+    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    grid-gap: 0.5em;
+}
+
+.grid img {
+    width: 100%;
+}
